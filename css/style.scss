@@ -1,0 +1,68 @@
+body {
+    background: hsl(218, 23%, 16%);
+}
+.advice {
+    background: hsl(217, 19%, 24%);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    border-radius: 15px;
+    padding: 20px;
+
+    max-width: calc(30rem);
+
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.008),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.012),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.015),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.018),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.022),
+    100px 100px 80px rgba(0, 0, 0, 0.03)
+  ;
+}
+.advice-id {
+    color: hsl(150, 100%, 66%);
+
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    font-family: "Manrope";
+    font-weight: 800;
+    font-size: 14px;
+}
+.advice-quote {
+    color: hsl(193, 38%, 86%);
+
+    font-family: "Manrope";
+    font-weight: 800;
+    font-size: 28px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.advice-regenerate {
+    background: hsl(150, 100%, 66%);
+
+    position: relative;
+    bottom: -3rem;
+
+    width: 60px;
+    height: 60px;
+
+    border: 0;
+    border-radius: 50px;
+
+    transition: .1s;
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 0 35px hsl(150, 100%, 66%);
+    }
+    object {
+        pointer-events: none;
+    }
+}
